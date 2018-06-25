@@ -12,8 +12,6 @@ export default function serve({ token, dir }) {
 
 	const modules = getModules(getMigiConf(dir), dir)
 
-	console.log(modules)
-
 	Object.entries(modules).forEach(([mod, Module]) => {
 		console.log(
 			blue(

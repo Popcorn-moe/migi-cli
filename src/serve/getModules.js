@@ -6,7 +6,7 @@ export default function getModules({ modules } = {}, dir) {
 	return modules
 		.map(mod => {
 			const Module = require(join(dir, 'node_modules', mod))
-			return [mod, Module]
+			return [mod, Module.default || Module]
 		})
 		.reduce((obj, [k, v]) => ((obj[k] = v), obj), {})
 }

@@ -9,8 +9,7 @@
   "author": "The Popcorn.moe Team",
   "license": "MIT",
   "dependencies": {
-    "@popcorn.moe/migi-cli": "^1.0.0",
-    "migi-shiro": "^1.0.0"
+    "migi-shiro": "^1.0.1"
   },
   "migi": {
     "modules": [
