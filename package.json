@@ -1,0 +1,53 @@
+{
+  "name": "migi-cli",
+  "version": "1.0.0",
+  "description": "The Migi CLI",
+  "main": "lib",
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md"
+  ],
+  "bin": {
+    "migi": "./lib/index.js"
+  },
+  "scripts": {
+    "build": "rimraf lib && babel src -d lib",
+    "prepack": "npm run build",
+    "start": "babel-node src",
+    "format": "prettier --write src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Popcorn-moe/migi-cli.git"
+  },
+  "keywords": [
+    "migi",
+    "cli",
+    "anime",
+    "i",
+    "like",
+    "trains"
+  ],
+  "author": "The Popcorn.moe Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Popcorn-moe/migi-cli/issues"
+  },
+  "homepage": "https://github.com/Popcorn-moe/migi-cli#readme",
+  "dependencies": {
+    "@popcorn.moe/migi": "^1.6.0",
+    "chalk": "^2.4.1",
+    "dotenv": "^6.0.0",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.47",
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/node": "^7.0.0-beta.47",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "prettier": "^1.12.1",
+    "rimraf": "^2.6.2"
+  }
+}

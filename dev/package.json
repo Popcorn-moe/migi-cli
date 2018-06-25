@@ -1,0 +1,20 @@
+{
+  "name": "migi-cli-dev",
+  "version": "1.0.0",
+  "description": "Simple playground",
+  "main": "index.js",
+  "scripts": {
+    "start": "migi serve"
+  },
+  "author": "The Popcorn.moe Team",
+  "license": "MIT",
+  "dependencies": {
+    "@popcorn.moe/migi-cli": "^1.0.0",
+    "migi-shiro": "^1.0.0"
+  },
+  "migi": {
+    "modules": [
+      "migi-shiro"
+    ]
+  }
+}
